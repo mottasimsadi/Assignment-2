@@ -41,8 +41,8 @@
 /* Nav Styles */
 
 .nav-bar{
-    max-width: 1440px;
-    justify-content: space-around;
+    max-width: 1160px;
+    justify-content: space-between;
     align-items: center;
     margin: 0 auto;
     /* margin-top: 20px; */
@@ -65,8 +65,6 @@
 }
 
 .nav-list ul{
-    justify-content: space-around;
-    align-items: center;
     gap: 32px;
 }
 
@@ -98,6 +96,41 @@
     display: none;
 }
 
+/* Banner Styles */
+
+.banner{
+    max-width: 1160px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    /* gap: 50px; */
+}
+
+.banner-content{
+    width: 640px;
+    height: 331px;
+}
+
+.banner-title{
+    font-size: 4.063rem;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.banner-description{
+    font-size: 1.25rem;
+    margin-bottom: 24px;
+}
+.banner .btn-banner{
+    background-color: black;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.banner-img img{
+    width: 100%;
+}
+
 /* Responsive Media Query for Mobile Device */
 
 @media screen and (max-width: 576px) {
@@ -119,5 +152,39 @@
     .ham-burger{
         display: block;
         color: black;
+    }
+
+    .banner{
+        margin-top: 8px;
+        margin-left: 16px;
+        margin-right: 17px;
+        flex-direction: column-reverse;
+        padding: 20px 0px;
+        gap: 20px;
+    }
+
+    .banner-content{
+        text-align: center;
+        width: 357px;
+        height: 252px;
+    }
+
+    .banner-title{
+        font-size: 2rem;
+        margin-bottom: 18px;
+    }
+
+    .banner-description{
+        font-size: 0.875rem;
+        font-weight: 500;
+        margin-bottom: 18px;
+    }
+
+    .banner .btn-banner{
+        background-color: black;
+        font-size: 1rem;
+        font-weight: 700;
+        border-radius: 8px;
+        padding: 8px 24px;
     }
 }
