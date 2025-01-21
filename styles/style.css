@@ -4,4 +4,120 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: Quicksand;
+}
+
+/* Shared Styles */
+
+.orange{
+    color: #FEA301;
+}
+
+.sky-blue{
+    color: #01ACFD;
+}
+
+.aqua{
+    color: #05D4DF;
+}
+
+.purple{
+    color: #5D58EF;
+}
+
+.display-flex{
+    display: flex;
+}
+
+.btn-primary{
+    padding: 10px 50px;
+    /* margin: 0px 186px; */
+    border-radius: 12px;
+    border: 1px solid transparent;
+    color: white;
+    cursor: pointer;
+}
+
+/* Nav Styles */
+
+.nav-bar{
+    max-width: 1440px;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    /* margin-top: 20px; */
+    padding: 20px 0px;
+}
+
+.logo{
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.logo img{
+    width: 100%;
+}
+
+.nav-title{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.nav-list ul{
+    justify-content: space-around;
+    align-items: center;
+    gap: 32px;
+}
+
+.nav-list ul li{
+    list-style: none;
+}
+
+.nav-list ul li a{
+    text-decoration: none;
+}
+
+.home{
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.about, .facility, .admission{
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.btn-nav .btn-primary{
+    font-size: 1.25rem;
+    font-weight: 600;
+    background-color: #FEA301;
+}
+
+.ham-burger{
+    display: none;
+}
+
+/* Responsive Media Query for Mobile Device */
+
+@media screen and (max-width: 576px) {
+    .nav-list, .btn-nav, .nav-title{
+        display: none;
+    }
+
+    .logo img{
+        width: 80%;
+    }
+
+    .nav-bar{
+        justify-content: space-between;
+        padding: 12px 16px;
+        /* margin: 12px 16px; */
+        border-bottom: 1px solid #FEA301;
+    }
+    
+    .ham-burger{
+        display: block;
+        color: black;
+    }
 }
